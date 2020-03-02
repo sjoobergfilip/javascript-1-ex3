@@ -10,7 +10,7 @@ class App extends React.Component {
 	}
 
 
-		handelSearch = city => {
+		handelSearch = (city) => {
 
 			//axios
 			axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=513f5e5aacbc39b1f10d91cb9aedc523`)
