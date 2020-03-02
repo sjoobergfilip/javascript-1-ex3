@@ -13,7 +13,7 @@ class App extends React.Component {
 		handelSearch = city => {
 
 			//axios
-			axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=a9f6719e37f20890ebff5d91724dec1f`)
+			axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=513f5e5aacbc39b1f10d91cb9aedc523`)
 			.then(res => {
 				console.log(res);
 				this.setState({
@@ -22,7 +22,7 @@ class App extends React.Component {
 			})
 			.catch(error => {
 				console.error(error);
-				alert(`${city} finns inte, skriv in en ny stad, t.ex. malmö`)
+				alert(`Ojsan, ${city} finns inte, skriv in en ny stad, t.ex. malmö`)
 			});
 		}
 
